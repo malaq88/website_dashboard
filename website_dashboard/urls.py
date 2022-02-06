@@ -11,10 +11,12 @@ schema_view = get_swagger_view(title='Pastebin API')
 
 from posts.api import viewsets as postsviewsets
 from services.api import viewsets as servicesviewsets
+from user.api import viewsets as userviewsets
 route = routers.DefaultRouter()
 
 route.register('posts', postsviewsets.PostsViewset, basename="posts")
 route.register('services', servicesviewsets.ServicesViewset, basename="services")
+route.register('user', userviewsets.UserViewset, basename="user")
 
 urlpatterns = [
     path('admin/', admin.site.urls),

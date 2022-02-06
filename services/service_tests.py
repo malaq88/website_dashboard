@@ -10,6 +10,7 @@ def test_posts_deve_retornar_200_quando_receber_um_get():
 
 def test_tasks_deve_retornar_400_quando_receber_um_todo_invalido():
     task =   {
+        "_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "title": "",
         "description": "",
         "price": ""
@@ -19,6 +20,7 @@ def test_tasks_deve_retornar_400_quando_receber_um_todo_invalido():
 
 def test_tasks_deve_retornar_400_quando_receber_um_todo():
     task =   {
+        "_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
         "title": "string",
         "description": "string",
         "price": 9223372036854776000
