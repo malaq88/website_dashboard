@@ -4,7 +4,7 @@ import uuid
 
 
 class Posts(models.Model):
-    post_id = models.UUIDField(primary_key = True,
+    _id = models.UUIDField(primary_key = True,
                                default = uuid.uuid4,
                                editable = False)
     title = models.CharField(u'Título', max_length=200)
