@@ -26,7 +26,6 @@ def test_create_return_201_when_create():
         "price": '92233720376000'
     }
     request = post(api_url, json=task)
-    import pdb ; pdb.set_trace()
     assert request.status_code == 201
 
 # TODO: to improve this test
