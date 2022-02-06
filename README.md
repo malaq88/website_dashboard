@@ -1,24 +1,34 @@
 # Website Dashboard API
 
-Este repositório contem a base para execução de uma APIs Rest desenvolvidas usando Django Rest Framework.
+Este repositório contem a base para execução de uma APIs Rest desenvolvida usando Django Rest Framework.
 
-A API se chama **Website Dashboard** e basicamente detêm o trabalho de gerir o cadastro de *usuários*, *posts* e *services* no sistema e administrar que os mesmos possam visualizados, editados, esclidos e listados de acordo com seu path de execução.
+A API se chama **Website Dashboard** e basicamente detêm o trabalho de gerir o cadastro de *usuários*, *posts* e *services* no sistema e administrar que os mesmos possam ser visualizados, editados, escluidos e listados de acordo com seu path de execução e método enviado via post.
 
 ### Tecnologias Utilizadas
 
 » Python
+
 » Django
+
 » Django Rest FrameWork
+
 » Pytest
+
 » Swagger
+
 » Redoc
-» Docker 
+
+» Docker
+
 » Docker Compose
+
 » PostgreSQL
 
 ### Requisitos
 
-Este projeto foi pensado para executar sobre o Docker, embora esteja numa versão inicial e itens relacionados à segurança do ambiente podem ser incrementados. Serão necessários:
+Este projeto foi pensado para executar sobre o Docker, embora esteja numa versão inicial e itens relacionados à segurança do ambiente podem ser incrementados. 
+
+## Serão necessários:
 
 » Docker
 
@@ -76,7 +86,7 @@ http://localhost:8000
 * **[DELETE] /services/:_id**: Remove um serviço do banco
 
 
-#### Documentação Swagger
+#### Documentação
 
-/api/swagger/**: Documentação Swagger
-/api/redoc/**: Documentação Redoc
+* **[POST] /api/swagger/**: Documentação Swagger
+* **[POST] /api/redoc/**: Documentação Redoc
