@@ -22,7 +22,7 @@ def test_create_return_201_when_create():
     task = {
         "title": "teste 2",
         "content": "outro conteudo",
-        "author": "desconhecido"
+        "author": "1"
     }
     request = post(api_url, json=task)
     assert request.status_code == 201
