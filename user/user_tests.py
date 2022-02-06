@@ -9,11 +9,11 @@ api_url = 'http://localhost:8000/user/'
 delete_url = 'http://localhost:8000/user/delete/'
 
 
-def test_posts_deve_retornar_200_quando_receber_um_get():
+def test_posts_return_status_code_200_when_get():
     request = get(api_url)
     assert request.status_code == 200
 
-def test_tasks_deve_retornar_400_quando_receber_um_todo_invalido():
+def test_bad_tasks_return_400_when_invalid_task():
     task = {
     "username": "",
     "first_name": "",
@@ -26,7 +26,7 @@ def test_tasks_deve_retornar_400_quando_receber_um_todo_invalido():
     request = post(api_url, json=task)
     assert request.status_code == 400
 
-def test_tasks_deve_retornar_400_quando_receber_um_todo():
+def test_create_return_201_when_create():
     task = {
         "username": random_string,
         "first_name": random_string,
@@ -38,7 +38,8 @@ def test_tasks_deve_retornar_400_quando_receber_um_todo():
     request = post(api_url, json=task)
     assert request.status_code == 201
 
-def test_tasks_deve_retornar_400_quando_receber_um_todo():
+# TODO: to improve this test
+def delete_return_400_when_not_find_delete():
       
     id = "2"
 
